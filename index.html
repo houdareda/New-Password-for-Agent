@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تسجيل وكيل جديد | New Agent Registration</title>
+    <title>تسجيل موظف جديد | New Agent Registration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
     <div class="background-animation"></div>
     <div class="container">
       <header>
-        <h1>تسجيل وكيل جديد</h1>
+        <h1>تسجيل موظف جديد</h1>
         <p>New Agent Registration</p>
       </header>
 
@@ -27,23 +27,34 @@
       >
         <div class="input-group">
           <label for="leaderName">اسم الليدر (Leader Name)</label>
-          <input
-            type="text"
-            id="leaderName"
-            name="Leader Name"
-            required
-            placeholder="أدخل اسم الليدر"
-          />
+          <select id="leaderName" name="Leader Name" required>
+            <option value="" disabled selected>اختر اسم الليدر</option>
+            <option value="Reem Abd ElAziz">Reem Abd ElAziz</option>
+            <option value="Andrew Melad">Andrew Melad</option>
+            <option value="Ramez Khairy">Ramez Khairy</option>
+            <option value="Kiro Saad">Kiro Saad</option>
+            <option value="Demiana Ibrahim">Demiana Ibrahim</option>
+            <option value="Saif Eldin">Saif Eldin</option>
+            <option value="Mina Medhat">Mina Medhat</option>
+            <option value="Maro Mahrous">Maro Mahrous</option>
+            <option value="Donia Abdalah">Donia Abdalah</option>
+            <option value="Donia Hassan">Donia Hassan</option>
+            <option value="Haidy Hassan">Haidy Hassan</option>
+            <option value="Dina yousry">Dina yousry</option>
+            <option value="Hadeer Essam">Hadeer Essam</option>
+            <option value="Jonathan baher">Jonathan baher</option>
+            <option value="Gerges Tarek">Gerges Tarek</option>
+          </select>
         </div>
 
         <div class="input-group">
-          <label for="agentName">اسم الوكيل (Agent Name)</label>
+          <label for="agentName">اسم الموظف (Employee Name)</label>
           <input
             type="text"
             id="agentName"
             name="Agent Name"
             required
-            placeholder="أدخل اسم الوكيل"
+            placeholder="أدخل اسم الموظف"
           />
         </div>
 
