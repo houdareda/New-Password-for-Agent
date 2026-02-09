@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل وكيل جديد | New Agent Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-animation"></div>
+    <div class="container">
+      <header>
+        <h1>تسجيل وكيل جديد</h1>
+        <p>New Agent Registration</p>
+      </header>
+
+      <form
+        id="agentForm"
+        action="https://api.sheetmonkey.io/form/i2QyoSV15YwLHpBGgTXUyh"
+        method="POST"
+      >
+        <div class="input-group">
+          <label for="leaderName">اسم الليدر (Leader Name)</label>
+          <input
+            type="text"
+            id="leaderName"
+            name="Leader Name"
+            required
+            placeholder="أدخل اسم الليدر"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="agentName">اسم الوكيل (Agent Name)</label>
+          <input
+            type="text"
+            id="agentName"
+            name="Agent Name"
+            required
+            placeholder="أدخل اسم الوكيل"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="password">كلمة المرور الجديدة (New Password)</label>
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="Password"
+              required
+              placeholder="••••••••"
+            />
+            <button
+              type="button"
+              id="togglePassword"
+              class="icon-btn"
+              aria-label="Toggle password visibility"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hidden field for submission date -->
+        <input
+          type="hidden"
+          name="Created"
+          value="x-sheetmonkey-current-date-time"
+        />
+
+        <button type="submit" id="submitBtn">
+          <span class="btn-text">تسجيل (Register)</span>
+          <span class="btn-loader"></span>
+        </button>
+      </form>
+
+      <div id="statusMessage" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
